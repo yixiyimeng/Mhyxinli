@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<div class="header subheader">
+			<a href="" class="reback"></a>
+			证书查看
+		</div>
+		<div class="page">
+			<div class="certificate">
+				<table class="table">
+					<tr>
+						<th>名称</th>
+						<th>发布日期</th>
+						<th>证书</th>
+						<th>下载</th>
+					</tr>
+					<tr>
+						<td>XXX报告书</td>
+						<td>2019-5-20</td>
+						<td><a href="javascript:;" class="js-show">查看</a></td>
+						<td><a href="" class="dowmload"></a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!-- 证书 -->
+		<div class="win">
+			<div class="win-bd cert-details">
+				<a href="javascript:;" class="close"><img src="../img/close.png" alt=""></a>
+				<img src="../img/img2.jpg" alt="">
+			</div>
+		</div>
+	</body>
+</html>
+<script>
+	$(function() {
+		$('.table').on('click', '.js-show', function() {
+			$('.win').show()
+		})
+		$('.win .close').click(function() {
+			$('.win').hide()
+		})
+	})
+</script>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<div class="header subheader">
+			<a href="" class="reback"></a>
+			缴费历史
+		</div>
+		<div class="page ">
+			<div class="bgfff">
+				<div class="orderlist ">
+					<div class="title flex">
+						<span>姓名</span>
+						<span class="flex-1">预约类型</span>
+						<span>状态</span>
+					</div>
+					<div class="order-item">
+						<div class="order-hd flex">
+							<span>温莎丽</span>
+							<span class="flex-1 phone">线上</span>
+							<span class="state c-gren">预约成功</span>
+						</div>
+						<div class="order-bd">
+							<p>姓名：XXXXX</p>
+							<p>
+								性别：女</p>
+							<p>
+								预约时间：2019-5-20（10：00-11：00）</p>
+							<p>
+								手机号：15800032659</p>
+							<p>
+								预约类型：线上</p>
+							<div class="flex mt25">
+								<div>预约描述：</div>
+								<div class="flex-1">遇到了与心理有关的现实问题并请求帮助的人群；二
+									是精神正常，但心理健康出现问题并。</div>
+							</div>
+							<p class="mt25">
+								状态：<span class="c-gren">预约成功</span></p>
+						</div>
+					</div>
+					<div class="order-item">
+						<div class="order-hd flex">
+							<span>温莎丽</span>
+							<span class="flex-1 phone">线上</span>
+							<span class="state c-gren">预约成功</span>
+						</div>
+						<div class="order-bd">
+							<p>姓名：XXXXX</p>
+							<p>
+								性别：女</p>
+							<p>
+								预约时间：2019-5-20（10：00-11：00）</p>
+							<p>
+								手机号：15800032659</p>
+							<p>
+								预约类型：线上</p>
+							<div class="flex mt25">
+								<div>预约描述：</div>
+								<div class="flex-1">遇到了与心理有关的现实问题并请求帮助的人群；二
+									是精神正常，但心理健康出现问题并。</div>
+							</div>
+							<p class="mt25">
+								状态：<span class="c-gren">预约成功</span></p>
+						</div>
+					</div>
+				</div>
+				<!-- 分页 -->
+				<div class="pagination mt30 pb40">
+					<a href="javascript:;" class="prev"></a>
+					<a href="javascript:;" class="ml10">1</a>
+					<a href="javascript:;" class="ml5">2</a>
+					<span class="ml10 mr10">…</span>
+					<a href="javascript:;" class="mr10">8</a>
+					<a href="javascript:;" class="next"></a>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
+<script type="text/javascript">
+	$(function() {
+		$('.orderlist').on('click', '.order-item .order-hd', function() {
+			$(this).toggleClass('open');
+			$(this).next('.order-bd').slideToggle();
+		})
+
+	})
+</script>
