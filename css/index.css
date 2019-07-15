@@ -3,6 +3,13 @@
 	margin-top: .2rem;
 	padding: 0 .3rem;
 }
+.loginbox +.tip{
+	padding: 0 .3rem;
+	line-height: .4rem;
+	font-size: .22rem;
+	color: #999;
+}
+
 .myinfo {
 	background: url(../img/bg.jpg) no-repeat center center;
 	color: #fff;

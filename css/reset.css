@@ -523,6 +523,9 @@ input {
 	margin-top: .2rem;
 }
 
+.ml10 {
+	margin-left: .1rem;
+}
 .ml20 {
 	margin-left: .2rem;
 }
@@ -878,7 +881,7 @@ html {
 }
 
 /* 确认按钮 */
-.confirmBtn {
+.confirmBtn ,.regBtn{
 	color: #fff;
 	font-size: .28rem;
 	margin: .3rem;
@@ -889,7 +892,18 @@ html {
 	display: block;
 	text-align: center;
 }
-
+/* 注册按钮 */
+.regBtn{
+	color: #2cb0d6;
+	background: none;
+	border: 1px solid #2cb0d6;
+}
+.forgetpwd{
+	float: right;
+	color: #999;
+	font-size: .22rem;
+	margin-right: .3rem;
+}
 .textareabox {
 	padding: .3rem;
 }
@@ -1008,7 +1022,8 @@ html {
 	color: #999;
 	font-size: .22rem;
 }
-.input-group .input-row input[type=text]{
+.input-group .input-row input[type=text],
+.input-group .input-row input[type=password]{
 	text-align: right;
 	font-size: .28rem;
 	border: none;
@@ -1034,10 +1049,23 @@ html {
 	position: relative;
 	overflow: hidden;
 }
-.input-group .input-row .upload input[type=file]{
+.input-group .input-row .upload input[type=file],.input-group .input-row .uploadCard input[type=file]{
 	position: absolute;
 	font-size: 400px;
 	right: 0;
 	top: 0;
 	opacity: 0;
+}
+.input-group .input-row .uploadCard{
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	width: 2.08rem;
+	height: 1.33rem;
+	border: 1px solid #dbdbdb;
+	border-radius: .08rem;
+	line-height: 1.33rem;
+	text-align: center;
+	font-size: .24rem;
+	color: #999;
 }
