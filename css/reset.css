@@ -568,16 +568,62 @@ input {
 html {
 	-webkit-text-size-adjust: none
 }
-
 .header {
-	height: 1.06rem;
+	padding: .2rem .3rem;
 	background: #fff;
-	border-bottom: 1px solid #e0e0e0;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
+	height: 1.06rem;
 	z-index: 9999;
+	border-bottom: .02rem solid #e0e0e0;
+}
+
+.header img {
+	display: block;
+	width: 100%;
+}
+
+.header .logo {
+	float: left;
+	height: .65rem;
+	width: 4.36rem;
+}
+
+.header>div {
+	height: 100%;
+}
+
+
+/* 
+.footer {
+	color: #cee4ea;
+	text-align: center;
+	font-size: .24rem;
+	line-height: .36rem;
+	background: #0790b7;
+	padding: .4rem .3rem;
+}
+
+.footer .link,
+.footer .link a {
+	color: #fff;
+}
+
+.footer .link {
+	padding-bottom: .4rem;
+	border-bottom: 1px solid #3da7c5;
+	margin-bottom: .3rem;
+}
+
+.footer .link span {
+	margin: 0 .2rem;
+} */
+.line{
+	height: 1px;
+	width: 100%;
+	background: #e6e6e6;
 }
 
 .header.subheader {
@@ -927,4 +973,72 @@ html {
 /*选中后label的背景色改变*/
 .switch:checked~span {
 	background-color: #4fca42;
+}
+.page {
+	padding: 1.06rem 0 0;
+	background: #f3f3f3;
+
+}
+.tab {
+	text-align: center;
+}
+.tab a{
+	display: inline-block;
+	color: #ccc;
+	font-size: .34rem;
+	padding:.5rem .2rem .4rem;
+	border-bottom: .05rem solid transparent;
+	
+	
+}
+.tab a.active{
+	border-color: #349cba;
+	color: #333;
+}
+.input-group .input-row{
+	padding: .35rem 0;
+	border-bottom: 1px solid #eee;
+}
+.input-group .input-row .title{
+	color: #333;
+	font-size: .28rem;
+	padding-left: .1rem;
+	margin-right: .2rem;
+}
+.input-group .input-row .title .subtitle{
+	color: #999;
+	font-size: .22rem;
+}
+.input-group .input-row input[type=text]{
+	text-align: right;
+	font-size: .28rem;
+	border: none;
+}
+.input-group .input-row  input[type=text].getcode{
+	text-align: left;
+}
+.input-group .input-row  .sendcode{
+	color: #0c9ec8;
+	font-size: .28rem;
+}
+.input-group .input-row .download,.input-group .input-row .upload{
+	height: .7rem;
+	width: .7rem;
+	border: 1px solid #0c9ec8;
+	border-radius: .08rem;
+	background: url(../img/download2.png) no-repeat center center;
+	background-size: .32rem auto;
+}
+.input-group .input-row .upload{
+	border-color: #dbdbdb;
+	background-image:url(../img/add2.png) ;
+	position: relative;
+	overflow: hidden;
+}
+.input-group .input-row .upload input[type=file]{
+	position: absolute;
+	font-size: 400px;
+	right: 0;
+	top: 0;
+	opacity: 0;
 }
